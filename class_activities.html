@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <py-config>
+            packages = ["numpy", "matplotlib"]
+        </py-config>
+
+        <title>10-Topaz Class Website | Class Activities</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm center" id="navbar">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="navitem">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance_tracker.html" id="navitem">Attendance Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_activities.html" id="navitem">Class Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classmate_list.html" id="navitem">List of Classmates</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container" id="header">
+            <h1>Highlights of Our 10-Topaz Journey!</h1>
+            <p>Discover the exciting activities and events we've been part of!</p>
+        </div>
+
+        <div class="container" id="body">
+            <div class="row">
+                <div class="col">
+                     <div class="card" id="card">
+                        <img class="card-img-top" src="Images/10Cparty.jpeg" height="350px">
+                        <div class="card-body">
+                            <h4 class="card-title">Christmas Party</h4>
+                            <p class="card-text">December</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                     <div class="card" id="card">
+                        <img class="card-img-top" src="Images/RedBulldogs.jpeg" height="350px">
+                        <div class="card-body">
+                            <h4 class="card-title">Intramurals</h4>
+                            <p class="card-text">March</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                     <div class="card" id="card">
+                        <img class="card-img-top" src="Images/CAT.jpeg" height="350px">
+                        <div class="card-body">
+                            <h4 class="card-title">Salon Session</h4>
+                            <p class="card-text">April</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col">
+                     <div class="card" id="card">
+                        <img class="card-img-top" src="Images/JCO.jpeg" height="350px">
+                        <div class="card-body">
+                            <h4 class="card-title">Joint Campout</h4>
+                            <p class="card-text">January</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                     <div class="card" id="card">
+                        <img class="card-img-top" src="Images/Retreat.jpeg" height="350px">
+                        <div class="card-body">
+                            <h4 class="card-title">Retreat</h4>
+                            <p class="card-text">February</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                     <div class="card" id="card">
+                        <img class="card-img-top" src="Images/Minimart.jpeg" height="350px">
+                        <div class="card-body">
+                            <h4 class="card-title">Food Fair</h4>
+                            <p class="card-text">December</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <p>Jalainie Abdullah & Calvin Garcia | 10-Topaz | SY. 2526</p>
+        </footer>
+
+        <py-script src="main.py"></py-script>
+    </body>
+</html>

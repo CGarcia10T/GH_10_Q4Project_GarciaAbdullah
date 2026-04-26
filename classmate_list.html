@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <py-config>
+            packages = ["numpy", "matplotlib"]
+        </py-config>
+
+        <title>10-Topaz Class Website | List of Classmates</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm center" id="navbar">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="navitem">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance_tracker.html" id="navitem">Attendance Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_activities.html" id="navitem">Class Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classmate_list.html" id="navitem">List of Classmates</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container" id="header">
+            <h1>Grade 10 Classmates System</h1>
+            <p>Add and view your classmates easily.</p>
+        </div>
+        <div class="container" id="form">
+            <form>
+                <label for="name">Enter your fullname:</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter your fullname, ex: Firstname Lastname">
+                <br>
+                <label for="section">Enter your section:</label>
+                <input class="form-control" type="text" id="section" placeholder="Enter your section, ex: Level-Section">
+                <br>
+                <label for="subject">Enter your favourite subject:</label>
+                <input class="form-control" type="text" id="subject" placeholder="Enter your favourite subject">
+                <br>
+                <div id="btn-group">
+                    <button type="button" class="btn" id="add-classmate" py-click="addClassmate">Add Classmate</button>
+                    <button type="button" class="btn" id="show-list" py-click="showList">Show List</button>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="list">
+            <h4>Classmate List</h4>
+            <div id="output"></div>
+        </div>
+
+        <footer id="footer">
+            <p>Jalainie Abdullah & Calvin Garcia | 10-Topaz | SY. 2526</p>
+        </footer>
+
+        <py-script src="main.py"></py-script>
+    </body>
+</html>

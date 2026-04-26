@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <py-config>
+            packages = ["numpy", "matplotlib"]
+        </py-config>
+
+        <title>10-Topaz Class Website | Attendance Tracker</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm center" id="navbar">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="navitem">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance_tracker.html" id="navitem">Attendance Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_activities.html" id="navitem">Class Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classmate_list.html" id="navitem">List of Classmates</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container" id="header">
+            <h1>Grade 10 Attendance Tracker</h1>
+            <p>Add and view absences easily.</p>
+        </div>
+        <div class="container" id="form">
+            <label for="month">Select the month:</label>
+            <select class="form-control" id="month" name="month">
+                <option value="" disabled selected>Select Month</option>
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="Aug">August</option>
+                <option value="Sep">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+            <br>
+            <label for="absences">Enter the number of absences:</label>
+            <input type="number" class="form-control" id="absences" name="absences" min="1" placeholder="Enter number of absences">
+            <br>
+            <div id="btn-group">
+                <button type="button" class="btn" id="button" py-click="add">Add Absence</button>
+                <button type="button" class="btn" id="button" py-click="graph">Show Graph</button>
+            </div>
+        </div>
+        <div class="container" id="outputgroup">
+            <div class="container" id="output"></div>
+            <div class="container" id="graph_output"></div>
+        </div>
+
+        <footer id="footer">
+            <p>Jalainie Abdullah & Calvin Garcia | 10-Topaz | SY. 2526</p>
+        </footer>
+
+        <py-script src="main.py"></py-script>
+    </body>
+</html>

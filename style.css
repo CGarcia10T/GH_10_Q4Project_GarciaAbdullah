@@ -1,0 +1,67 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+#output, #form, #header, #list, #body, #outputgroup {
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    padding: 20px;
+    background-color: #ffc87c;
+    color: #fefae0;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#card {
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    background-color: #ffc87c;
+    color: #fefae0;
+    border-radius: 10px;
+}
+
+#navbar {
+    background-color: #ffc87c;
+}
+
+#navitem {
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    color: #fefae0;
+}
+
+body {
+    background-color: #7CB3FF;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#add-classmate, #show-list, #button {
+    color: #fefae0;
+    background-color: #7CB3FF;
+    font-size: 16px;
+}
+
+#footer {
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #fefae0;
+    bottom: fixed;
+}
